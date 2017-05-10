@@ -1,0 +1,22 @@
+{
+  "name": "contactlist",
+  "version": "1.0.0",
+  "description": "a list of contacts",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "SET SENDGRID_SECRET_KEY=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&&SET DB_HOST=localhost&& SET DB_USER=root&&SET DB_PW=watson1340&&SET DB=contacts&& nodemon"
+  },
+  "keywords": [
+    "contact"
+  ],
+  "author": "Steven Morris",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "express-mysql-session": "^1.2.0",
+    "express-session": "^1.15.2",
+    "mysql": "^2.13.0"
+  }
+}

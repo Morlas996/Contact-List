@@ -1,0 +1,13 @@
+<h1>Call Me Beep Me if You Wanna Reach Me</h1>
+<div ng-repeat="contact in contacts" class="col-lg-6 col-md-7 col-sm-9 col-xs-12 col-lg-offset-3">
+    
+                    
+        <a ng-href="/{{contact.id}}">{{contact.name}}</a>
+        <div>{{contact.email}}</div>
+        <div>{{contact.phone}}</div>
+        </div>
+        <p>Add a contact</p>
+        <input type="text" ng-model="name" placeholder="name"></input>
+        <input type="text" ng-model="email" placeholder="New Email"></input>
+        <input type="text" ng-model="phone" placeholder="x-xxx-xxx-xxxx" maxlength="14"></input></br>
+        <button class="btn btn-primary" ng-click="saveContact()">Add Contact</button>

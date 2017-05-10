@@ -1,0 +1,24 @@
+<h1>Some Jerk I may or may not know</h1>
+<div class="col-lg-6 col-md-7 col-sm-10 col-xs-12 col-lg-offset-3">
+<div>{{contacts.name}}</div>
+        <div>{{contacts.email}}</div>
+        <div>{{contacts.phone}}</div>
+
+        <!--<p ng-model="from">{{contacts.email}}</p>
+        <input ng-model="subject"/>
+        <input ng-model="content"/>-->
+        <!--<button class="btn btn-outline-primary" ng-click="sendEmail()">Send Email</button>-->
+        <a style="margin-left: 5px;" class="btn btn-primary" ng-href="/">Home</a>
+        <button class="btn btn-outline-primary" ng-click="deleteContact()">Delete Contact</button></div>
+        <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Send Email</button>
+
+<div class="modal  bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <input ng-model="from" placeholder="{{contacts.email}}" disabled="true">
+        <input ng-model="subject"/>
+        <input ng-model="content"/>
+        <button class="btn btn-outline-primary" ng-click="sendEmail()">Send Email</button>
+    </div>
+  </div>
+</div>
